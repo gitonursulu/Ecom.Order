@@ -46,4 +46,16 @@ app.Run();
 
 //TODO: Saga Pattern!
 
-//
+//TODO: Load Test, Security Test
+
+//TODO: Circuit Breaker
+
+//TODO: NextJs.
+
+//TODO: Gateway?
+
+//TODO: Authentication and Authorization
+
+//TODO: Loglama monitoring tracing
+
+//TODO: Elasticsearch, ELK?, grafana, SEQ, dynatrace, newrelic, appdynamic
