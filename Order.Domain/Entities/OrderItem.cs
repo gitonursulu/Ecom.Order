@@ -10,7 +10,7 @@ namespace Order.Domain.Models
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public int OrderId { get; set; }
+        public Guid OrderId { get; set; }
         public virtual Order Order { get; set; }
     }
 }

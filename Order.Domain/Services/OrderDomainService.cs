@@ -26,5 +26,10 @@ namespace Order.Domain.Services
 
             return Task.FromResult(order);
         }
+
+        public Task<Models.Order> GetOrderById(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

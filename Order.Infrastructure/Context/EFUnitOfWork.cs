@@ -12,10 +12,10 @@ namespace Order.Infrastructure.Context
 {
     public class EFUnitOfWork : IUnitOfWork
     {
-        private readonly DbContext _dbContext;
+        private readonly SQLDbContext _dbContext;
         private readonly IMediator _mediator;
 
-        public EFUnitOfWork(DbContext dbContext, IMediator mediator)
+        public EFUnitOfWork(SQLDbContext dbContext, IMediator mediator)
         {
             _dbContext = dbContext;
             _mediator = mediator;
