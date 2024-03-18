@@ -31,30 +31,32 @@ app.MapControllers();
 app.Run();
 
 
-//DONE-TODO: UnitTest yazýlacak.
+//TODO: UnitTest yazýlacak, Load Test
+
+//TODO: Consul Ocelot
 
 //TODO: Jenkinsde CI sürecine testler baðlanacak.
 
-//TODO: EventSourcing implemente edilecek. EventStore
+//TODO: Circuit Breaker
 
-//DONE-TODO: FluentApi valueobjectler.
+//TODO: Rate limit
 
-//TODO: EDD evet
-
-//TODO: TDD?
+//TODO: EDD
 
 //TODO: Saga Pattern!
+//TODO: Loglama monitoring tracing
+//TODO: Service Orchestrator
 
-//TODO: Load Test, Security Test
+//TODO: Elasticsearch, ELK?, grafana, SEQ, dynatrace, newrelic, appdynamic
 
-//TODO: Circuit Breaker
+//TODO: EventSourcing implemente edilecek. EventStore
+
+//TODO: Security Test
 
 //TODO: NextJs.
 
-//TODO: Gateway?
-
 //TODO: Authentication and Authorization
 
-//TODO: Loglama monitoring tracing
+//TODO: TDD?
 
-//TODO: Elasticsearch, ELK?, grafana, SEQ, dynatrace, newrelic, appdynamic
+
