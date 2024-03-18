@@ -15,6 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Order.Tests", "Order.Tests\
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "order.presentation", "Order.Presentation\order.presentation.esproj", "{40B41E16-98F2-4D7E-AC1C-F43943B88333}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LoadTest", "LoadTest", "{72729E82-7E4D-47F4-8F28-6A3AB6DEE767}"
+	ProjectSection(SolutionItems) = preProject
+		locustfile.py = locustfile.py
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
