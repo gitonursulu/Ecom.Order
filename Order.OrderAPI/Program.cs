@@ -30,15 +30,14 @@ app.MapControllers();
 
 app.Run();
 
-//TODO: Connection String eklenecek.
 
-//TODO: UnitTest yazýlacak.
+//DONE-TODO: UnitTest yazýlacak.
 
 //TODO: Jenkinsde CI sürecine testler baðlanacak.
 
 //TODO: EventSourcing implemente edilecek. EventStore
 
-//TODO: FluentApi valueobjectler.
+//DONE-TODO: FluentApi valueobjectler.
 
 //TODO: EDD evet
 
