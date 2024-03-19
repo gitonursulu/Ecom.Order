@@ -1,4 +1,6 @@
+using Order.Infrastructure.Extensions;
 using Order.OrderAPI.Configuration;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +13,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDatabaseConfiguration(builder.Configuration);
 
-builder.Services.AddDependencyInjectionConfiguration();
+builder.Services.AddDependencyInjectionConfiguration(builder.Configuration);
 
 var app = builder.Build();
 
@@ -28,10 +30,13 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+app.MapHealthChecks("/health");
+
+//app.RegisterWithConsul(app.Lifetime);
+
 app.Run();
 
-
-//TODO: UnitTest yazýlacak, Load Test
+//TODO: UnitTest yazýlacak.
 
 //TODO: Consul Ocelot
 
@@ -60,3 +65,4 @@ app.Run();
 //TODO: TDD?
 
 
+//TODO: Elasticsearch, ELK?, grafana, SEQ, dynatrace, newrelic, appdynamic
