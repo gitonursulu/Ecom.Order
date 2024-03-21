@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  c_orderservice:
+    container_name: "order_service"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "6060:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    networks:
+      - ecom_network
+
+networks:
+  ecom_network:
+    external: true

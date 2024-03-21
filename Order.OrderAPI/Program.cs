@@ -49,7 +49,9 @@ app.Run();
 //TODO: EDD
 
 //TODO: Saga Pattern!
+
 //TODO: Loglama monitoring tracing
+
 //TODO: Service Orchestrator
 
 //TODO: Elasticsearch, ELK?, grafana, SEQ, dynatrace, newrelic, appdynamic
@@ -63,6 +65,5 @@ app.Run();
 //TODO: Authentication and Authorization
 
 //TODO: TDD?
-
 
 //TODO: Elasticsearch, ELK?, grafana, SEQ, dynatrace, newrelic, appdynamic
