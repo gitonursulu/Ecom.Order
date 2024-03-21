@@ -1,12 +1,10 @@
 from locust import HttpUser, between, task
 
 class WebsiteUser(HttpUser):
-    wait_time = between(5, 15)
+    wait_time = between(1, 1)
     
     @task
-    def index_page(self):
-        self.client.get("/")
+    def order_get(self):
+        self.client.get("/Test")
         
-    @task(3)
-    def load_blog(self):
-        self.client.get("/blog")
+
