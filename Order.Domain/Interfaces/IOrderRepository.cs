@@ -9,5 +9,6 @@ namespace Order.Domain.Interfaces
     public interface IOrderRepository
     {
         Task CreateOrder(Order.Domain.Models.Order Order);
+        Task<Order.Domain.Models.Order> GetOrderById(Guid id);
     }
 }

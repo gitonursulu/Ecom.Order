@@ -13,9 +13,10 @@ namespace Order.Application.Services
         private readonly IOrderRepository _orderRepository;
         private readonly IMediator _mediator;
 
-        public OrderAppService(IOrderRepository orderRepository)
+        public OrderAppService(IOrderRepository orderRepository, IMediator mediator)
         {
             _orderRepository = orderRepository;
+            _mediator = mediator;
         }
 
         public async Task CreateOrder(CreateOrderCommand OrderCommand)

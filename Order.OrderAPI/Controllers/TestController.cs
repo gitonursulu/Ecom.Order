@@ -16,11 +16,11 @@ namespace Order.OrderAPI.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get(int id)
+        public async Task<IActionResult> Get(Guid id)
         {
             var order = await _orderAppService.GetOrderById(new GetOrderByIdQuery { Id = id });
 
-            return Ok("ben order api");
+            return Ok(order);
         }
 
         [HttpPost]

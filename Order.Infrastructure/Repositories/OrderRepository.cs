@@ -19,5 +19,10 @@ namespace Order.Infrastructure.Repositories
         {
             await _sqlDbContext.Orders.AddAsync(Order);
         }
+        public async Task<Order.Domain.Models.Order> GetOrderById(Guid id)
+        {
+            var order = await _sqlDbContext.Orders.FindAsync(id);
+            return order;
+        }
     }
 }

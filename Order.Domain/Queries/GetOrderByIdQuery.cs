@@ -9,7 +9,7 @@ namespace Order.Domain.Queries
 {
     public class GetOrderByIdQuery : IRequest<string>
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
         // IRequest<UserDto> dönüş tipi, sorgu sonucu olarak bir UserDto döndürülmesini sağlar.
     }
